@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>TOOD</title>
+    <meta name="description" content="DESCRIPTION" />
+    <link href="styles.css" rel="stylesheet" />
+    <script defer src="main.js"></script>
+  </head>
+  <body>
+    <main class="app">
+      <div class="todo">
+        <header class="todo-header">
+          <section class="header-today">
+            <h4>2024</h4>
+            <h5>May 16th</h5>
+          </section>
+          <ul class="header-weekdays">
+            <li class="weekday">
+              <h4>16</h4>
+              <p>Mon</p>
+            </li>
+            <li>
+              <h4>17</h4>
+              <p>Tue</p>
+            </li>
+            <li>
+              <h4>18</h4>
+              <p>Wed</p>
+            </li>
+            <li>
+              <h4>19</h4>
+              <p>Thu</p>
+            </li>
+            <li>
+              <h4>20</h4>
+              <p>Fri</p>
+            </li>
+            <li>
+              <h4>21</h4>
+              <p>Sat</p>
+            </li>
+            <li>
+              <h4>22</h4>
+              <p>Sun</p>
+            </li>
+          </ul>
+        </header>
+        <main class="todo-main">
+          <h4>Todays Tasks (1)</h4>
+          <section id="empty-tasks" class="empty-tasks">
+            <p>There are no tasks for today 🎉</p>
+            <p>Let's create a new one ❤️</p>
+          </section>
+          <section id="tasks" class="tasks">
+            <ul id="tasks-list"></ul>
+          </section>
+        </main>
+        <footer class="todo-footer">
+          <input
+            class="todo-input"
+            type="text"
+            id="task-input"
+            placeholder="Buy food at 12:00"
+          />
+          <input
+            class="todo-submit"
+            type="image"
+            src="assets/plus-circle.svg"
+            alt="Add new Task Icon"
+            id="add-task-icon"
+            onclick="addTask()"
+          />
+        </footer>
+      </div>
+    </main>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
